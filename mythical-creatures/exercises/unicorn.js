@@ -10,6 +10,10 @@ class Unicorn {
     };
   };
 
+  says(words) {
+    return `**;* ${words} *;**`
+  };
+
 };
 
 module.exports = Unicorn;
