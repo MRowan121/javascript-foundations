@@ -7,6 +7,9 @@ class Hobbit {
 
     celebrateBirthday() {
         this.age = this.age + 1;
+        if(this.age >= 33) {
+            this.adult = true;
+        };
     };
 
 };
