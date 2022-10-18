@@ -7,8 +7,11 @@ class Vampire {
     };
 
     drink() {
+        if(this.ouncesDrank >= 50) {
+            return `I'm too full to drink anymore!`;
+        }
         this.ouncesDrank = this.ouncesDrank + 10;
-        return this.thirsty = false;
+        this.thirsty = false;
     };
 
 };
