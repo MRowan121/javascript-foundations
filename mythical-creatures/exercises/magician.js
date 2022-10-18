@@ -10,7 +10,11 @@ class Magician {
     };
 
     performTrick() {
+        if(this.favoriteAccessory === "cape") {
+            return `PULL DOVE FROM SLEEVE`
+        } else {
         return `PULL RABBIT FROM TOP HAT`;
+        };
     };
 
 };
