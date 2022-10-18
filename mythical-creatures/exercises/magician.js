@@ -9,6 +9,10 @@ class Magician {
     return magic.toUpperCase() + `!`
     };
 
+    performTrick() {
+        return `PULL RABBIT FROM TOP HAT`;
+    };
+
 };
 
 
