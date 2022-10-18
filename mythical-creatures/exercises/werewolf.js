@@ -8,6 +8,7 @@ class Werewolf {
     completeTransformation() {
         if(this.form === "human") {
         this.form = "wolf";
+        this.hungry = true;
         return `Aaa-Woooo!`;
         } else {
             this.form = "human";
