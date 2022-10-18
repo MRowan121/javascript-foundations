@@ -3,6 +3,7 @@ class Magician {
         this.name = `The Great ` + name.name;
         this.assistant = name.assistant
         this.favoriteAccessory = (name.clothing || "top hat");
+        this.confidencePercentage = 10;
     };
 
     performIncantation(magic) {
