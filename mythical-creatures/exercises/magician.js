@@ -20,7 +20,7 @@ class Magician {
     };
 
     performShowStopper() {
-        if(this.confidencePercentage < 100) {
+        if(this.confidencePercentage < 100 || this.assistant === false) {
             return `Oh no, this trick is not ready!`;
         } else {
             return `WOW! The magician totally just sawed that person in half!`
