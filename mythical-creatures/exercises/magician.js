@@ -19,6 +19,14 @@ class Magician {
         };
     };
 
+    performShowStopper() {
+        if(this.confidencePercentage < 100) {
+            return `Oh no, this trick is not ready!`;
+        } else {
+            return `WOW! The magician totally just sawed that person in half!`
+        };
+    };
+
 };
 
 
