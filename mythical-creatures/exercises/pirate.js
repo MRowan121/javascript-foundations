@@ -15,6 +15,12 @@ class Pirate {
         return `YAARRR!`
     };
 
+    liftCurse() {
+        this.booty = this.booty - 300;
+        this.cursed = false;
+        return `Your curse has been lifted!`;
+    };
+
 };
 
 module.exports = Pirate;
