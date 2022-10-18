@@ -7,6 +7,10 @@ class Pirate {
     };
 
     robShip() {
+        if(this.booty >= 500) {
+            this.cursed = true;
+            return `ARG! I've been cursed!`;
+        };
         this.booty = this.booty + 100;
         return `YAARRR!`
     };
