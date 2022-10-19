@@ -1,5 +1,3 @@
-var Victim = require('./victim');
-
 class Werewolf {
     constructor(name) {
         this.name = name;
