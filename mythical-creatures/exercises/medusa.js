@@ -12,10 +12,10 @@ class Medusa {
         if(this.statues.length < 3) {
             this.statues.push(statue);
         } else if (this.statues.length === 3) {
-            this.statues.shift();
             this.statues.push(statue);
+            var human = new Person(this.statues.shift().name);
+            return human;
         };
-        console.log(this.statues)
     };
 };
 
