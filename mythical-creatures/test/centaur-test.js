@@ -53,7 +53,7 @@ describe('Centaur', function() {
     assert.equal(centaur.standing, true);
   });
 
-  it.skip('should be cranky after running or shooting a bow three times', function() {
+  it('should be cranky after running or shooting a bow three times', function() {
     var centaur = new Centaur({ name: 'Georgiana', type: 'Palomino' });
 
     assert.equal(centaur.cranky, false);
@@ -65,7 +65,7 @@ describe('Centaur', function() {
     assert.equal(centaur.cranky, true)
   });
 
-  it.skip('should be cranky after running or shooting a bow three times', function() {
+  it('should be cranky after running or shooting a bow three times', function() {
     var centaur = new Centaur({ name: 'Georgiana', type: 'Palomino' });
 
     assert.equal(centaur.cranky, false);
@@ -77,7 +77,7 @@ describe('Centaur', function() {
     assert.equal(centaur.cranky, true)
   });
 
-  it.skip('should not shoot when cranky', function() {
+  it('should not shoot when cranky', function() {
     var centaur = new Centaur({ name: 'Georgiana', type: 'Palomino' });
 
     centaur.shootBow();
@@ -87,7 +87,7 @@ describe('Centaur', function() {
     assert.equal(centaur.shootBow(), 'NO!');
   });
 
-  it.skip('should not run when cranky', function() {
+  it('should not run when cranky', function() {
     var centaur = new Centaur({ name: 'Georgiana', type: 'Palomino' });
 
     centaur.shootBow();
@@ -97,13 +97,13 @@ describe('Centaur', function() {
     assert.equal(centaur.run(), 'NO!');
   });
 
-  it.skip('should not sleep while standing', function() {
+  it('should not sleep while standing', function() {
     var centaur = new Centaur({ name: 'Georgiana', type: 'Palomino' });
 
     assert.equal(centaur.sleep(), 'NO!');
   });
 
-  it.skip('after laying down it is not standing', function() {
+  it('after laying down it is not standing', function() {
     var centaur = new Centaur({ name: 'Georgiana', type: 'Palomino' });
 
     assert.equal(centaur.standing, true);
@@ -120,7 +120,7 @@ describe('Centaur', function() {
     assert.equal(centaur.layingDown, false);
   });
 
-  it.skip('should not run or shoot while laying down', function() {
+  it('should not run or shoot while laying down', function() {
     var centaur = new Centaur({ name: 'Georgiana', type: 'Palomino' });
 
     centaur.layDown();
