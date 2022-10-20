@@ -1,7 +1,8 @@
 class Centaur {
-    constructor(name, type) {
-        this.name = name.name
-        this.breed = name.type
+    constructor(name) {
+        this.name = name.name;
+        this.breed = name.type;
+        this.cranky = false;
     };
 
     shootBow() {
