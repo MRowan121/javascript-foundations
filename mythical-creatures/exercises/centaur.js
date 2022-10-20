@@ -9,19 +9,19 @@ class Centaur {
 
     shootBow() {
         this.exercise = this.exercise + 1;
-        if(this.exercise === 3) {
+        if(this.exercise >= 3) {
             this.cranky = true;
-            return 'Twang!!!';
+            return 'NO!';
         } else {
-        return 'Twang!!!'
+            return 'Twang!!!'
         };
     };
 
     run() {
         this.exercise = this.exercise + 1;
-        if(this.exercise === 3) {
+        if(this.exercise >= 3) {
             this.cranky = true;
-            return 'Clop clop clop clop!!!';
+            return 'NO!';
         } else {
             return 'Clop clop clop clop!!!';
         };
