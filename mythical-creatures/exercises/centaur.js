@@ -26,6 +26,12 @@ class Centaur {
             return 'Clop clop clop clop!!!';
         };
     };
+
+    sleep() {
+        if(this.standing) {
+            return 'NO!';
+        }
+    };
 };
 
 module.exports = Centaur;
