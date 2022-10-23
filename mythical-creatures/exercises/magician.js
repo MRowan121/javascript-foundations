@@ -11,7 +11,7 @@ class Magician {
     };
 
     performTrick() {
-        this.confidencePercentage = this.confidencePercentage + 10;
+        this.confidencePercentage += 10;
         if(this.favoriteAccessory === "cape") {
             return `PULL DOVE FROM SLEEVE`
         } else {
