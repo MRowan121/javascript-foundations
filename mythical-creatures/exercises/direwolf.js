@@ -18,7 +18,7 @@ class Direwolf {
     leave(family) {
         var familyIndex = this.starksToProtect.findIndex(object => {
             return object === family;
-        })
+        });
         this.starksToProtect.splice(familyIndex, 1)
         family.safe = false;
     };
