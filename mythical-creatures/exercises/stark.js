@@ -22,11 +22,7 @@ class Stark {
         this.safe = true;
         direwolf1.huntsWhiteWalkers = false;
         direwolf1.starksToProtect.push(this);
-        console.log(direwolf1);
-        console.log(direwolf1.name);
-        console.log(direwolf1.home);
-        console.log(direwolf1.starksToProtect[0].name);
-        console.log(this.safe)
+        return direwolf1
     };
 
 };
