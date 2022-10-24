@@ -13,6 +13,10 @@ class Fairy {
         this.dust += 10;
     };
 
+    makeDresses(flower) {
+        this.clothes.dresses.push(...flower)
+    };
+
 };
 
 module.exports = Fairy;
