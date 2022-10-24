@@ -1,38 +1,45 @@
 class Centaur {
-    constructor(name, exercise) {
+    constructor(name, counter) {
         this.name = name.name;
         this.breed = name.type;
         this.cranky = false;
         this.standing = true;
-        this.exercise = (exercise || 0);
+        this.counter = (counter || 0);
         this.layingDown = false;
     };
 
     shootBow() {
-        this.exercise = this.exercise + 1;
-        if(this.exercise >= 3) {
+        this.counter += 1;
+        if(this.layingDown === true) {
+            return 'NO!';
+        } else if(this.counter < 3) {
+            return 'Twang!!!'
+        } else {
             this.cranky = true;
             return 'NO!';
-        } else {
-            return 'Twang!!!'
         };
     };
 
     run() {
-        this.exercise = this.exercise + 1;
-        if(this.exercise >= 3) {
+        this.counter += 1;
+        if(this.layingDown === true) {
+            return 'NO!';
+        } else if(this.counter < 3) {
+            return 'Clop clop clop clop!!!';
+        } else {
             this.cranky = true;
             return 'NO!';
-        } else {
-            return 'Clop clop clop clop!!!';
         };
     };
 
     sleep() {
         if(this.standing) {
             return 'NO!';
+        } else {
+            this.counter = 0;
+            this.cranky = false;
+            return 'ZZZZ';};
         };
-    };
 
     layDown() {
         this.standing = false;
@@ -42,6 +49,11 @@ class Centaur {
     standUp() {
         this.standing = true;
         this.layingDown = false;
+    };
+
+    drinkPotion() {
+        this.cranky = false;
+        return "Not while I'm laying down!"
     };
 };
 
