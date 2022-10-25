@@ -1,10 +1,13 @@
+const Ogre = require("./ogre");
+
 class Human {
     constructor(name) {
         this.name = name;
         this.encounterCounter = (this.encounterCounter || 0);
+        this.knockedOut = false;
     };
 
-    noticesOgre() {
+    noticesOgre(ogre) {
         if(this.encounterCounter > 0 && this.encounterCounter % 3 === 0) {
             return true;
         } else {
@@ -13,4 +16,4 @@ class Human {
     };
 };
 
-module.exports = Human;
+module.exports = Human; Ogre;
