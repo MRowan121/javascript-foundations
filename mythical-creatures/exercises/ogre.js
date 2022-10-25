@@ -1,12 +1,11 @@
 class Ogre {
-    constructor(name, home) {
+    constructor(name) {
         this.name = name.name;
         this.home = (name.abode || 'Swamp');
-        this.encounterCounter = (this.encounterCounter || 0);
     };
 
-    encounter() {
-        this.encounterCounter += 1;
+    encounter(human) {
+        human.encounterCounter += 1;
     };
 
 };
