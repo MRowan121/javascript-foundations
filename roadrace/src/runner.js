@@ -17,8 +17,7 @@ class Runner {
     };
 
     runRace(raceName, milesRan) {
-        this.milesRun += milesRan;
-        this.fitness += milesRan;
+        this.runSomeMiles(milesRan);
         this.completedRaces.push(raceName);
     };
 
