@@ -14,5 +14,5 @@ Run the command `npm test adopt-a-dog/test/dog-test.js`. To run other tests, jus
 
 ### Make the tests pass in the following sequence:
 
-* test/dog-test.js  
-* test/person-test.js  
+[x] test/dog-test.js  
+[x] test/person-test.js  
