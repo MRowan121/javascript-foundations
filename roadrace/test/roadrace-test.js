@@ -65,7 +65,7 @@ describe("Roadrace", function() {
     assert.equal(lazyHeather.completedRaces.includes('Rock N Roll Half Marathon'), false);
   })
 
-  it.skip('should update each participant\'s miles and fitness when race is completed', function() {
+  it('should update each participant\'s miles and fitness when race is completed', function() {
     var race = new Roadrace({title: 'Rock N Roll Half Marathon', city: "Las Vegas"});
     race.setDistance(13.1);
 
