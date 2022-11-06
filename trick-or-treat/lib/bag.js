@@ -14,11 +14,13 @@ class Bag {
 
     contains(candy) {
         for(var i = 0; i < this.candies.length; i++) {
-            if(this.candies[i].includes(candy)) {
+            if(this.candies[i].type === candy) {
                 return true;
-            }
-        }
-    }
+            } else {
+                return false;
+            };
+        };
+    };
 
 };
 
