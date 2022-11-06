@@ -18,7 +18,9 @@ class Roadrace {
     };
 
     completeRace() {
-        Runner.runRace(this.name, this.distance);
+        for(var i = 0; i < this.participants.length; i++) {
+            this.participants[i].runRace(this.name, this.distance)
+        };
     };
 };
 
