@@ -1,9 +1,9 @@
 class GolfCourse {
-    constructor(name, difficulty, openings, [feature1, feature2]) {
+    constructor(name, difficulty, openings, feature) {
         this.name = name;
         this.difficulty = difficulty;
         this.openings = openings;
-        this.features = [feature1, feature2];
+        this.features = feature;
     }
 
 }
