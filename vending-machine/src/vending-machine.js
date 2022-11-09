@@ -16,7 +16,9 @@ class VendingMachine {
 
     purchaseSnack(snackName, payment) {
         for(var i = 0; i < this.snacks.length; i++) {
-            if(this.snacks[i].name === snackName) {
+            if(this.snacks[i].name === snackName && this.snacks[i].itemsInStock === 0) {
+                return `Sorry, no items in stock. Try another item.`
+            } else if(this.snacks[i].name === snackName && this.snacks[i].itemsInStock !== 0){
                 this.snacks[i].removeItem()
                 return `Success! Here is $${payment - this.snacks[i].price} back!`
             }
