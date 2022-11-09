@@ -94,7 +94,7 @@ describe("VendingMachine", function() {
     assert.equal(machine.snacks[1].itemsInStock, 2);
   })
 
-  it.skip('should not be able to purchase a snack if it is out of stock', function() {
+  it('should not be able to purchase a snack if it is out of stock', function() {
     var machine = new VendingMachine({ id: 123, isBroken: true });
     var candyBar = new Snack('hersey\'s milk chocolate', 0.75);
 
